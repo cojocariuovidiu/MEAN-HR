@@ -1,9 +1,9 @@
 {
-  "name": "MEAN-stack-authentication",
+  "name": "MEAN-stack",
   "version": "1.0.0",
   "license": "MIT",
-  "author": "Leonardo Maglio  @leota",
-  "description": "MEAN stack authentication boilerplate with Angular 5 and Angular Material.",
+  "author": "Viktorija Filipov",
+  "description": "MEAN stack app.",
   "angular-cli": {},
   "engines": {
     "node": "6.11.4",
