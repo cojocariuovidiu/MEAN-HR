@@ -1,12 +1,62 @@
-.btn-wrap {
-    text-align: center;
-    margin: 40px 15px;
-    p {
-        margin: 10px;
-    }
-}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700,800,400,600);
+@import '../../../theme';
 
-.user-role {
-    text-align: center;
-    margin: 30px;
+$font-stack: 'Open Sans', sans-serif;
+$white: #faf9f9;
+$orange: #ef6c00;
+
+header {
+  background:
+    url('http://globalmedicalco.com/photos/globalmedicalco/27/131646.jpg') no-repeat center;
+  background-size: cover;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+
+  p, h1, h2 {
+    color: $orange;
+    font-family: $font-stack;
+    font-weight: 300;
+    line-height: 80px;
+  }
+  h1 {
+    font-size: 5.5rem;
+    font-weight: bold;
+    padding: 5%;
+    /* text-transform: uppercase; */
+  }
+  h2 {
+      font-size: 5rem;
+      font-weight: bold;
+  }
+  p {
+    margin-top: 30px;
+    margin-bottom: -20px;
+    font-size: 1.2rem;
+  }
+  
+  button[type="submit"] {
+    boder-box: box-sizing;
+    cursor: pointer;
+    color: $white;
+    text-transform: uppercase;
+    font-size: .8rem;
+    padding: 15px 30px;
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: -10px;
+    background: $orange;
+    border: none;
+    border: 2px solid $orange;
+    border-radius: 2px;
+    letter-spacing: 1px;
+    transition: all 300ms ease-in-out;
+    &:hover {
+      background: lighten($orange, 5%);
+      border-radius: 50px;
+      border: 2px solid lighten($orange, 5%);
+    }
+  }
 }
